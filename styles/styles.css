@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header img {
+    width: 100px;
+}
+
+div img {
+    width: 50px;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    background-color: orange;
+    color: white;
+}
+
+.formacion {
+    grid-area: formacion;
+    padding: 10px;
+}
+
+.listaFormacion {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listaXp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experiencia {
+    grid-area: experiencia;
+    padding: 10px;
+}
+
+.conocimientos {
+    grid-area: conocimientos;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.iconos {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+h1 {
+    background-color: orange;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+
+body {
+    width: 70%;
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "formacion conocimientos" 
+    "experiencia conocimientos";
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 55% auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
